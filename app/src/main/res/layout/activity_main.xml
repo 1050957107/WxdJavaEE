@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:padding="8dp"
+    tools:context=".MainActivity"
+    tools:ignore="MissingConstraints">
+    <TextView
+        android:id="@+id/item1"
+        style="@style/SlpTextStyle"
+        android:layout_marginLeft="4dp"
+        android:background="#4c5053"
+        android:text="内容选择"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:id="@+id/item2"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/home_background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/item1">
+
+        <LinearLayout
+            android:id="@+id/wings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables,UselessParent">
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="106dp"
+                android:src="@mipmap/ic_launcher"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                style="@style/SlpTextStyle"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="WINGS OF PREY\n           WOP"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/digital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:clickable="true"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables,UselessParent">
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="106dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_launcher"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                style="@style/SlpTextStyle"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="DIGITAL COMBAT SIMULATOR\n                       DCS"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/plane"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables,UselessParent">
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="106dp"
+                android:src="@mipmap/ic_launcher"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                style="@style/SlpTextStyle"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="    X PLane 11\n Cessna 172 SP"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item3"
+        style="@style/SlpTextStyle"
+        android:layout_marginLeft="3dp"
+        android:background="#4c5053"
+        android:text="难度选择"
+        app:layout_constraintLeft_toRightOf="@id/item2" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/home_background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintLeft_toRightOf="@id/item2"
+        app:layout_constraintTop_toBottomOf="@id/item3">
+
+        <LinearLayout
+            android:id="@+id/simple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="99dp"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables,UselessParent">
+
+            <ImageView
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:src="@mipmap/ic_launcher"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                style="@style/SlpTextStyle"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="简单"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/secondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables,UselessParent">
+
+            <ImageView
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:src="@mipmap/ic_launcher"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                style="@style/SlpTextStyle"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="中等"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/difficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="99dp"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables,UselessParent">
+
+            <ImageView
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:src="@mipmap/ic_launcher"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                style="@style/SlpTextStyle"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="困难"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item4"
+        style="@style/SlpTextStyle"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:background="#4c5053"
+        android:text="任务选择"
+        app:layout_constraintTop_toBottomOf="@id/item2" />
+
+    <LinearLayout
+        android:id="@+id/item5"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/home_background"
+        app:layout_constraintTop_toBottomOf="@id/item4">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/taskselectionRe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item6"
+        style="@style/SlpTextStyle"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:background="#4c5053"
+        android:text="运行时间及状态"
+        app:layout_constraintTop_toBottomOf="@id/item5" />
+
+    <RelativeLayout
+        android:id="@+id/item7"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/home_background"
+        app:layout_constraintTop_toBottomOf="@id/item6">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/home_select_background"
+            android:gravity="center"
+            android:text="5分钟"
+            android:id="@+id/five_minutes"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/five_minutes"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/home_select_background"
+            android:gravity="center"
+            android:text="10分钟"
+            android:id="@+id/ten_minutes"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/ten_minutes"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/home_select_background"
+            android:gravity="center"
+            android:text="15分钟"
+            android:id="@+id/fifteen_minutes"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/fifteen_minutes"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/home_select_background"
+            android:gravity="center"
+            android:text="无限运行"
+            android:id="@+id/unlimited_operation"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/item9"
+            android:layout_toRightOf="@id/unlimited_operation"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/home_time_background"
+            android:gravity="center"
+            android:text="系统\n状态"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/item9"
+            android:id="@+id/item10"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/home_time_background"
+            android:gravity="center"
+            android:text="安全带\n状态"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/item10"
+            android:id="@+id/item11"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/home_time_background"
+            android:gravity="center"
+            android:text="运动\n状态"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/item11"
+            android:id="@+id/item12"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/home_time_background"
+            android:gravity="center"
+            android:text="座椅\n状态"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:id="@+id/item13"
+            android:layout_toRightOf="@id/item12"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="当前时间：" />
+                <TextView
+                    android:id="@+id/time"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:maxWidth="120dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="总运行时间(小时)：" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:text="0.0"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="剩余时间(分)：" />
+                <TextView
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:text="5.0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="运行次数：" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/child"
+            android:id="@+id/vr"
+            android:layout_marginLeft="5dp"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:textSize="13sp"
+            android:text="VR模式"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/home_unselect_background"
+            />
+        <TextView
+            android:id="@+id/child"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:textSize="13sp"
+            android:layout_marginRight="20dp"
+            android:text="儿童模式"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:background="@drawable/home_unselect_background"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item8"
+        style="@style/SlpTextStyle"
+        android:layout_marginTop="4dp"
+        android:background="#4c5053"
+        android:text="系统控制"
+        app:layout_constraintTop_toBottomOf="@id/item7" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="133dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/home_background"
+        app:layout_constraintTop_toBottomOf="@id/item8">
+        <ImageView
+            android:layout_marginLeft="30dp"
+            android:layout_width="111dp"
+            android:layout_height="111dp"
+            android:src="@mipmap/ic_launcher"
+            />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/yellow"
+            android:text="检查安全带是否系好\n运动范围内是否有障碍物"
+            />
+        <TextView
+            android:layout_width="111dp"
+            android:layout_height="111dp"
+            android:layout_marginLeft="22dp"
+            android:background="@drawable/home_task_background"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="启动"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+        <TextView
+            android:layout_width="111dp"
+            android:layout_height="111dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/home_task_background"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="停止"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+        <TextView
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_marginLeft="22dp"
+            android:background="@drawable/home_task_background"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="驾驶舱\n位置校准"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            />
+        <TextView
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/home_task_background"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="退出"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            />
+        <ImageView
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/task_icon"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

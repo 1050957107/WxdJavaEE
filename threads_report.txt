@@ -1,0 +1,127 @@
+"FinalizerDaemon@5703" daemon prio=5 tid=0x234 nid=NA waiting
+  java.lang.Thread.State: WAITING
+	 blocks FinalizerDaemon@5703
+	  at java.lang.Object.wait(Object.java:-1)
+	  at java.lang.Object.wait(Object.java:422)
+	  at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:188)
+	  - locked <0x164c> (a java.lang.Object)
+	  at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:209)
+	  at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:234)
+	  at java.lang.Daemons$Daemon.run(Daemons.java:105)
+	  at java.lang.Thread.run(Thread.java:764)
+
+"main@5271" prio=5 tid=0x2 nid=NA runnable
+  java.lang.Thread.State: RUNNABLE
+	  at android.os.MessageQueue.nativePollOnce(MessageQueue.java:-1)
+	  at android.os.MessageQueue.next(MessageQueue.java:325)
+	  at android.os.Looper.loop(Looper.java:148)
+	  at android.app.ActivityThread.main(ActivityThread.java:6651)
+	  at java.lang.reflect.Method.invoke(Method.java:-1)
+	  at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:547)
+	  at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:822)
+
+"ReferenceQueueDaemon@5702" daemon prio=5 tid=0x233 nid=NA waiting
+  java.lang.Thread.State: WAITING
+	 blocks ReferenceQueueDaemon@5702
+	  at java.lang.Object.wait(Object.java:-1)
+	  at java.lang.Daemons$ReferenceQueueDaemon.runInternal(Daemons.java:180)
+	  - locked <0xdf3> (a java.lang.Class)
+	  at java.lang.Daemons$Daemon.run(Daemons.java:105)
+	  at java.lang.Thread.run(Thread.java:764)
+
+"HeapTaskDaemon@5705" daemon prio=5 tid=0x236 nid=NA waiting for monitor entry
+  java.lang.Thread.State: BLOCKED
+	  at dalvik.system.VMRuntime.runHeapTasks(VMRuntime.java:-1)
+	  at java.lang.Daemons$HeapTaskDaemon.runInternal(Daemons.java:463)
+	  at java.lang.Daemons$Daemon.run(Daemons.java:105)
+	  at java.lang.Thread.run(Thread.java:764)
+
+"Binder:interceptor@5417" prio=5 tid=0x23b nid=NA runnable
+  java.lang.Thread.State: RUNNABLE
+	  at android.os.MessageQueue.nativePollOnce(MessageQueue.java:-1)
+	  at android.os.MessageQueue.next(MessageQueue.java:325)
+	  at android.os.Looper.loop(Looper.java:148)
+	  at android.os.HandlerThread.run(HandlerThread.java:65)
+
+"Thread-2@5591" prio=5 tid=0x23c nid=NA runnable
+  java.lang.Thread.State: RUNNABLE
+	  at libcore.io.Linux.poll(Linux.java:-1)
+	  at libcore.io.BlockGuardOs.poll(BlockGuardOs.java:216)
+	  at android.system.Os.poll(Os.java:372)
+	  at libcore.io.IoBridge.poll(IoBridge.java:689)
+	  at java.net.PlainSocketImpl.socketAccept(PlainSocketImpl.java:181)
+	  at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:416)
+	  at java.net.ServerSocket.implAccept(ServerSocket.java:547)
+	  at java.net.ServerSocket.accept(ServerSocket.java:515)
+	  at com.example.slproject.utils.Service.sendMsg(Service.java:15)
+	  at com.example.slproject.TestActivity$1.run(TestActivity.java:53)
+	  at java.lang.Thread.run(Thread.java:764)
+
+"Thread-3@5639" prio=5 tid=0x241 nid=NA runnable
+  java.lang.Thread.State: RUNNABLE
+	  at libcore.io.Linux.connect(Linux.java:-1)
+	  at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:126)
+	  at libcore.io.IoBridge.connectErrno(IoBridge.java:152)
+	  at libcore.io.IoBridge.connect(IoBridge.java:130)
+	  at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:129)
+	  at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:356)
+	  - locked <0x164e> (a java.net.SocksSocketImpl)
+	  at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	  at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	  at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:357)
+	  at java.net.Socket.connect(Socket.java:616)
+	  at java.net.Socket.connect(Socket.java:565)
+	  at java.net.Socket.<init>(Socket.java:445)
+	  at java.net.Socket.<init>(Socket.java:217)
+	  at com.example.slproject.TestActivity$3.run(TestActivity.java:75)
+	  at java.lang.Thread.run(Thread.java:764)
+
+"FinalizerWatchdogDaemon@5704" daemon prio=5 tid=0x235 nid=NA sleeping
+  java.lang.Thread.State: TIMED_WAITING
+	 blocks FinalizerWatchdogDaemon@5704
+	  at java.lang.Thread.sleep(Thread.java:-1)
+	  at java.lang.Thread.sleep(Thread.java:373)
+	  - locked <0x164d> (a java.lang.Object)
+	  at java.lang.Thread.sleep(Thread.java:314)
+	  at java.lang.Daemons$FinalizerWatchdogDaemon.sleepFor(Daemons.java:344)
+	  at java.lang.Daemons$FinalizerWatchdogDaemon.waitForFinalization(Daemons.java:366)
+	  at java.lang.Daemons$FinalizerWatchdogDaemon.runInternal(Daemons.java:283)
+	  at java.lang.Daemons$Daemon.run(Daemons.java:105)
+	  at java.lang.Thread.run(Thread.java:764)
+
+"Jit thread pool worker thread 0@5299" daemon prio=5 tid=0x230 nid=NA runnable
+  java.lang.Thread.State: RUNNABLE
+	 Incompatible thread state: thread not suspended
+
+"Signal Catcher@5701" daemon prio=5 tid=0x231 nid=NA waiting
+  java.lang.Thread.State: WAITING
+	 Incompatible thread state: thread not suspended
+
+"Binder:12165_1@5706" prio=5 tid=0x237 nid=NA runnable
+  java.lang.Thread.State: RUNNABLE
+	 Incompatible thread state: thread not suspended
+
+"Binder:12165_2@5707" prio=5 tid=0x238 nid=NA runnable
+  java.lang.Thread.State: RUNNABLE
+	 Incompatible thread state: thread not suspended
+
+"Profile Saver@5270" daemon prio=5 tid=0x239 nid=NA runnable
+  java.lang.Thread.State: RUNNABLE
+	 Incompatible thread state: thread not suspended
+
+"RenderThread@5609" prio=5 tid=0x23d nid=NA runnable
+  java.lang.Thread.State: RUNNABLE
+	 Incompatible thread state: thread not suspended
+
+"Binder:12165_3@5618" prio=5 tid=0x23e nid=NA runnable
+  java.lang.Thread.State: RUNNABLE
+	 Incompatible thread state: thread not suspended
+
+"hwuiTask1@5629" prio=5 tid=0x23f nid=NA runnable
+  java.lang.Thread.State: RUNNABLE
+	 Incompatible thread state: thread not suspended
+
+"hwuiTask2@5630" prio=5 tid=0x240 nid=NA runnable
+  java.lang.Thread.State: RUNNABLE
+	 Incompatible thread state: thread not suspended
+
