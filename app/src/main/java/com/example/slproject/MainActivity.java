@@ -14,9 +14,9 @@ import com.example.slproject.adapter.HomeTaskSelectionAdapter;
 import com.example.slproject.databinding.ActivityMainBinding;
 import com.example.slproject.entity.TaskSelectionBean;
 import com.example.slproject.entity.TaskSelectionResources;
-import com.example.slproject.utils.SpacesItemDecoration;
-import com.example.slproject.widgets.NoDoubleClickListener;
 import com.w.xd.mvp.base.BaseActivity;
+import com.w.xd.mvp.utils.NoDoubleClickListener;
+import com.w.xd.mvp.utils.SpacesItemDecoration;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -50,6 +50,8 @@ public class MainActivity extends BaseActivity {
         binding.tenMinutes.setOnClickListener(doubleClickListener);
         binding.fifteenMinutes.setOnClickListener(doubleClickListener);
         binding.unlimitedOperation.setOnClickListener(doubleClickListener);
+
+
         binding.tenMinutes.setBackground(getDrawable(R.drawable.home_unselect_background));
         binding.fifteenMinutes.setBackground(getDrawable(R.drawable.home_unselect_background));
         binding.unlimitedOperation.setBackground(getDrawable(R.drawable.home_unselect_background));
@@ -60,6 +62,8 @@ public class MainActivity extends BaseActivity {
         binding.difficulty.setBackground(getDrawable(R.drawable.home_unselect_background));
         binding.secondary.setBackground(getDrawable(R.drawable.home_unselect_background));
         binding.simple.setBackground(getDrawable(R.drawable.home_select_background));
+
+
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         linearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
         binding.taskselectionRe.setLayoutManager(linearLayoutManager);

@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.example.slproject"
+        applicationId "com.example.wxdtask"
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 1
@@ -22,35 +22,35 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    android {
-        buildFeatures {
-            viewBinding = true
-        }
-    }
-    //java1.8
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    buildFeatures{
+         viewBinding = true
+    }
 }
 
 dependencies {
+
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'com.google.android.material:material:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
-    implementation 'androidx.recyclerview:recyclerview:1.1.0'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+
+    implementation project(path: ':wxdlib')
+    annotationProcessor project(path: ':wxdlib:libMvpAnotation:compiler')
+
+
     implementation deps.rxJavaX.rxjava3
     implementation deps.rxJavaX.rxAndroid3
     implementation deps.rxJavaX.rxPermissions
     implementation deps.retrofitX.retrofit2_rxjava_components4
+    implementation deps.retrofitX.retrofit2
 
     implementation deps.glideX.glide
     annotationProcessor deps.glideX.compiler
-    implementation project(path: ':mvplib')
-    annotationProcessor project(path: ':mvplib:libMvpAnotation:compiler')
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation deps.androidX.multidex
 }

@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.slproject.GlideApp;
 import com.example.slproject.R;
 import com.example.slproject.entity.TaskSelectionBean;
 
@@ -47,7 +49,8 @@ public class HomeTaskSelectionAdapter extends RecyclerView.Adapter<HomeTaskSelec
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         TaskSelectionBean taskSelectionBean = list.get(position);
-        Glide.with(holder.itemView).load(taskSelectionBean.getDrawable()).into(holder.mTaskselectionImg);
+        GlideApp.with(holder.itemView).load(taskSelectionBean.getDrawable()).into(holder.mTaskselectionImg);
+
         holder.mTaskselectionTitle.setText(taskSelectionBean.getTitle());
         if (holder!=null){
             if (position==getThisPosition()){

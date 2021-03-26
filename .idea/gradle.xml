@@ -11,9 +11,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/mvplib" />
-            <option value="$PROJECT_DIR$/mvplib/libMvpAnotation" />
-            <option value="$PROJECT_DIR$/mvplib/libMvpAnotation/compiler" />
+            <option value="$PROJECT_DIR$/wxdlib" />
+            <option value="$PROJECT_DIR$/wxdlib/libMvpAnotation" />
+            <option value="$PROJECT_DIR$/wxdlib/libMvpAnotation/compiler" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

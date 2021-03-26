@@ -1,4 +1,4 @@
 include ':app'
 rootProject.name = "SlProject"
-include ':mvplib'
-include ':mvplib:libMvpAnotation:compiler'
+include ':wxdlib'
+include ':wxdlib:libMvpAnotation:compiler'
