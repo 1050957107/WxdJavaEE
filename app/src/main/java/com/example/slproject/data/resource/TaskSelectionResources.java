@@ -1,6 +1,8 @@
-package com.example.slproject.entity;
+package com.example.slproject.data.resource;
+
 
 import com.example.slproject.R;
+import com.example.slproject.data.entity.TaskSelectionBean;
 
 import java.util.ArrayList;
 

@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.slproject.GlideApp;
 import com.example.slproject.R;
-import com.example.slproject.entity.TaskSelectionBean;
+import com.example.slproject.data.entity.TaskSelectionBean;
 
 import java.util.ArrayList;
 
@@ -42,22 +42,19 @@ public class HomeTaskSelectionAdapter extends RecyclerView.Adapter<HomeTaskSelec
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View inflate = LayoutInflater.from(parent.getContext()).inflate(R.layout.home_taskselection_item, null);
+        View inflate = LayoutInflater.from(parent.getContext()).inflate(R.layout.home_taskselection_item, parent,false);
         return new ViewHolder(inflate);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         TaskSelectionBean taskSelectionBean = list.get(position);
-        GlideApp.with(holder.itemView).load(taskSelectionBean.getDrawable()).into(holder.mTaskselectionImg);
-
-        holder.mTaskselectionTitle.setText(taskSelectionBean.getTitle());
-        if (holder!=null){
-            if (position==getThisPosition()){
-                holder.mTaskselection.setBackground(holder.itemView.getResources().getDrawable(R.drawable.home_select_background));
-            }else {
-                holder.mTaskselection.setBackground(holder.itemView.getResources().getDrawable(R.drawable.home_unselect_background));
-            }
+        GlideApp.with(holder.itemView).load(taskSelectionBean.getDrawable()).into(holder.mTessellationImf);
+        holder.mTessellationsTitle.setText(taskSelectionBean.getTitle());
+        if (position==getThisPosition()){
+            holder.mTessellation.setBackground(holder.itemView.getResources().getDrawable(R.drawable.home_select_background));
+        }else {
+            holder.mTessellation.setBackground(holder.itemView.getResources().getDrawable(R.drawable.home_unselect_background));
         }
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,16 +71,16 @@ public class HomeTaskSelectionAdapter extends RecyclerView.Adapter<HomeTaskSelec
         return list.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
-        private ImageView mTaskselectionImg;
-        private TextView mTaskselectionTitle;
-        private LinearLayout mTaskselection;
+    public static class ViewHolder extends RecyclerView.ViewHolder {
+        private final ImageView mTessellationImf;
+        private final TextView mTessellationsTitle;
+        private final LinearLayout mTessellation;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            mTaskselection = itemView.findViewById(R.id.item_taskselection);
-            mTaskselectionImg = itemView.findViewById(R.id.taskselectionImg);
-            mTaskselectionTitle = itemView.findViewById(R.id.taskselectionTitle);
+            mTessellation = itemView.findViewById(R.id.item_taskselection);
+            mTessellationImf = itemView.findViewById(R.id.taskselectionImg);
+            mTessellationsTitle = itemView.findViewById(R.id.taskselectionTitle);
         }
     }
 

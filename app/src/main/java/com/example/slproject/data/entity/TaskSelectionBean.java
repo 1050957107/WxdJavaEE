@@ -1,4 +1,4 @@
-package com.example.slproject.entity;
+package com.example.slproject.data.entity;
 
 public class TaskSelectionBean {
     private int drawable;

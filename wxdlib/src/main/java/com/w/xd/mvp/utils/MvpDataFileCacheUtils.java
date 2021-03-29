@@ -1,14 +1,12 @@
 package com.w.xd.mvp.utils;
 
 import android.text.TextUtils;
-import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.google.gson.Gson;
 import com.w.xd.mvp.manager.MvpManager;
-
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -41,7 +39,12 @@ public class MvpDataFileCacheUtils {
         Gson gson = new Gson();
         return gson.fromJson(jsonStr, tClass);
     }
-
+    public static <T> T fromToJson(String json,Type listType) {
+        Gson gson = new Gson();
+        T t = null;
+        t = gson.fromJson(json,listType);
+        return t;
+    }
 
     /**
      * 把 json 转出指定的对象List<T> 这种类型并返回，比如 List<Person>

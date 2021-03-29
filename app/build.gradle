@@ -53,4 +53,6 @@ dependencies {
 
     implementation deps.glideX.glide
     annotationProcessor deps.glideX.compiler
+
+    implementation 'com.google.code.gson:gson:2.8.6'
 }

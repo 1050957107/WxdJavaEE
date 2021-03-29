@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/blue"
     android:padding="8dp"
-    tools:context=".MainActivity"
+    tools:context=".SplashActivity"
     tools:ignore="MissingConstraints">
     <TextView
         android:id="@+id/item1"
@@ -14,7 +14,7 @@
         android:layout_marginLeft="4dp"
         android:background="#4c5053"
         android:text="内容选择"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText,RtlHardcoded" />
 
     <LinearLayout
         android:id="@+id/item2"
@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:clickable="true"
             android:orientation="vertical"
-            tools:ignore="UseCompoundDrawables,UselessParent">
+            tools:ignore="KeyboardInaccessibleWidget,UseCompoundDrawables,UselessParent">
 
             <ImageView
                 android:layout_width="160dp"
@@ -57,7 +57,7 @@
             android:layout_marginRight="6dp"
             android:clickable="true"
             android:orientation="vertical"
-            tools:ignore="UseCompoundDrawables,UselessParent">
+            tools:ignore="KeyboardInaccessibleWidget,UseCompoundDrawables,UselessParent">
 
             <ImageView
                 android:layout_width="160dp"
@@ -80,7 +80,7 @@
             android:layout_height="wrap_content"
             android:clickable="true"
             android:orientation="vertical"
-            tools:ignore="UseCompoundDrawables,UselessParent">
+            tools:ignore="KeyboardInaccessibleWidget,UseCompoundDrawables,UselessParent">
 
             <ImageView
                 android:layout_width="160dp"
@@ -103,7 +103,8 @@
         android:layout_marginLeft="3dp"
         android:background="#4c5053"
         android:text="难度选择"
-        app:layout_constraintLeft_toRightOf="@id/item2" />
+        app:layout_constraintLeft_toRightOf="@id/item2"
+        tools:ignore="HardcodedText,RtlHardcoded" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -115,7 +116,8 @@
         android:orientation="horizontal"
         android:padding="8dp"
         app:layout_constraintLeft_toRightOf="@id/item2"
-        app:layout_constraintTop_toBottomOf="@id/item3">
+        app:layout_constraintTop_toBottomOf="@id/item3"
+        tools:ignore="RtlHardcoded">
 
         <LinearLayout
             android:id="@+id/simple"
@@ -123,7 +125,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="99dp"
             android:orientation="vertical"
-            tools:ignore="UseCompoundDrawables,UselessParent">
+            tools:ignore="RtlHardcoded,UseCompoundDrawables,UselessParent">
 
             <ImageView
                 android:layout_width="62dp"
@@ -192,7 +194,8 @@
         android:layout_marginTop="4dp"
         android:background="#4c5053"
         android:text="任务选择"
-        app:layout_constraintTop_toBottomOf="@id/item2" />
+        app:layout_constraintTop_toBottomOf="@id/item2"
+        tools:ignore="HardcodedText,RtlHardcoded" />
 
     <LinearLayout
         android:id="@+id/item5"
@@ -216,7 +219,8 @@
         android:layout_marginTop="4dp"
         android:background="#4c5053"
         android:text="运行时间及状态"
-        app:layout_constraintTop_toBottomOf="@id/item5" />
+        app:layout_constraintTop_toBottomOf="@id/item5"
+        tools:ignore="HardcodedText,RtlHardcoded" />
 
     <RelativeLayout
         android:id="@+id/item7"
@@ -237,7 +241,8 @@
             android:text="5分钟"
             android:id="@+id/five_minutes"
             android:textColor="@color/white"
-            android:textSize="13sp" />
+            android:textSize="13sp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
 
         <TextView
             android:layout_centerVertical="true"
@@ -250,7 +255,8 @@
             android:text="10分钟"
             android:id="@+id/ten_minutes"
             android:textColor="@color/white"
-            android:textSize="13sp" />
+            android:textSize="13sp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
 
         <TextView
             android:layout_centerVertical="true"
@@ -263,7 +269,8 @@
             android:text="15分钟"
             android:id="@+id/fifteen_minutes"
             android:textColor="@color/white"
-            android:textSize="13sp" />
+            android:textSize="13sp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
 
         <TextView
             android:layout_centerVertical="true"
@@ -276,7 +283,8 @@
             android:text="无限运行"
             android:id="@+id/unlimited_operation"
             android:textColor="@color/white"
-            android:textSize="11sp" />
+            android:textSize="11sp"
+            tools:ignore="HardcodedText,RtlHardcoded,SmallSp" />
 
         <TextView
             android:layout_centerVertical="true"
@@ -289,7 +297,8 @@
             android:gravity="center"
             android:text="系统\n状态"
             android:textColor="@color/white"
-            android:textSize="11sp" />
+            android:textSize="11sp"
+            tools:ignore="HardcodedText,RtlHardcoded,SmallSp" />
 
         <TextView
             android:layout_centerVertical="true"
@@ -302,7 +311,8 @@
             android:gravity="center"
             android:text="安全带\n状态"
             android:textColor="@color/white"
-            android:textSize="11sp" />
+            android:textSize="11sp"
+            tools:ignore="HardcodedText,RtlHardcoded,SmallSp" />
 
         <TextView
             android:layout_centerVertical="true"
@@ -315,7 +325,8 @@
             android:gravity="center"
             android:text="运动\n状态"
             android:textColor="@color/white"
-            android:textSize="11sp" />
+            android:textSize="11sp"
+            tools:ignore="HardcodedText,RtlHardcoded,SmallSp" />
 
         <TextView
             android:layout_centerVertical="true"
@@ -328,7 +339,8 @@
             android:gravity="center"
             android:text="座椅\n状态"
             android:textColor="@color/white"
-            android:textSize="11sp" />
+            android:textSize="11sp"
+            tools:ignore="HardcodedText,RtlHardcoded,SmallSp" />
 
         <LinearLayout
             android:layout_centerVertical="true"
@@ -337,7 +349,8 @@
             android:layout_marginLeft="40dp"
             android:layout_width="wrap_content"
             android:orientation="vertical"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            tools:ignore="RelativeOverlap,RtlHardcoded">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
@@ -346,7 +359,8 @@
                     android:textSize="12sp"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="当前时间：" />
+                    android:text="当前时间："
+                    tools:ignore="HardcodedText" />
                 <TextView
                     android:id="@+id/time"
                     android:textColor="@color/white"
@@ -364,14 +378,15 @@
                     android:textSize="12sp"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="总运行时间(小时)：" />
+                    android:text="总运行时间(小时)："
+                    tools:ignore="HardcodedText" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="12sp"
                     android:textColor="@color/white"
                     android:text="0.0"
-                    />
+                    tools:ignore="HardcodedText" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -381,14 +396,15 @@
                     android:textSize="12sp"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="剩余时间(分)：" />
+                    android:text="剩余时间(分)："
+                    tools:ignore="HardcodedText" />
                 <TextView
                     android:textColor="@color/white"
                     android:textSize="12sp"
                     android:text="5.0"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    />
+                    tools:ignore="HardcodedText" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -398,7 +414,8 @@
                     android:textSize="12sp"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="运行次数：" />
+                    android:text="运行次数："
+                    tools:ignore="HardcodedText" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -417,7 +434,7 @@
             android:gravity="center"
             android:textColor="@color/white"
             android:background="@drawable/home_unselect_background"
-            />
+            tools:ignore="HardcodedText,RtlHardcoded" />
         <TextView
             android:id="@+id/child"
             android:layout_centerVertical="true"
@@ -431,7 +448,7 @@
             android:layout_alignParentRight="true"
             android:textColor="@color/white"
             android:background="@drawable/home_unselect_background"
-            />
+            tools:ignore="HardcodedText,RtlHardcoded" />
     </RelativeLayout>
 
     <TextView
@@ -440,7 +457,8 @@
         android:layout_marginTop="4dp"
         android:background="#4c5053"
         android:text="系统控制"
-        app:layout_constraintTop_toBottomOf="@id/item7" />
+        app:layout_constraintTop_toBottomOf="@id/item7"
+        tools:ignore="HardcodedText" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="133dp"
@@ -453,7 +471,7 @@
             android:layout_width="111dp"
             android:layout_height="111dp"
             android:src="@mipmap/ic_launcher"
-            />
+            tools:ignore="ContentDescription,RtlHardcoded" />
         <TextView
             android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
@@ -461,8 +479,9 @@
             android:textSize="18sp"
             android:textColor="@color/yellow"
             android:text="检查安全带是否系好\n运动范围内是否有障碍物"
-            />
+            tools:ignore="HardcodedText,RtlHardcoded" />
         <TextView
+            android:id="@+id/gamestart"
             android:layout_width="111dp"
             android:layout_height="111dp"
             android:layout_marginLeft="22dp"
@@ -471,8 +490,10 @@
             android:gravity="center"
             android:text="启动"
             android:textColor="@color/white"
-            android:textSize="22sp" />
+            android:textSize="22sp"
+            tools:ignore="HardcodedText,KeyboardInaccessibleWidget,RtlHardcoded" />
         <TextView
+            android:id="@+id/gamestop"
             android:layout_width="111dp"
             android:layout_height="111dp"
             android:layout_marginLeft="5dp"
@@ -481,7 +502,8 @@
             android:gravity="center"
             android:text="停止"
             android:textColor="@color/white"
-            android:textSize="22sp" />
+            android:textSize="22sp"
+            tools:ignore="HardcodedText,KeyboardInaccessibleWidget,RtlHardcoded" />
         <TextView
             android:layout_width="66dp"
             android:layout_height="66dp"
@@ -492,7 +514,7 @@
             android:text="驾驶舱\n位置校准"
             android:textColor="@color/white"
             android:textSize="13sp"
-            />
+            tools:ignore="HardcodedText,KeyboardInaccessibleWidget,RtlHardcoded" />
         <TextView
             android:layout_width="66dp"
             android:layout_height="66dp"
@@ -503,11 +525,12 @@
             android:text="退出"
             android:textColor="@color/white"
             android:textSize="13sp"
-            />
+            tools:ignore="HardcodedText,KeyboardInaccessibleWidget,RtlHardcoded" />
         <ImageView
             android:layout_marginLeft="8dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/task_icon"/>
+            android:src="@drawable/task_icon"
+            tools:ignore="ContentDescription,RtlHardcoded" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
